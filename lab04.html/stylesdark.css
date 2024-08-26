@@ -1,0 +1,97 @@
+/* Estilos Globais - Modo Escuro */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;  /* Cor de fundo escura */
+    color: #f4f4f4;  /* Cor de texto clara */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1f1f1f;  /* Cor de fundo do cabeçalho mais escura */
+    color: white;  /* Cor de texto branca */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #b3b3b3;  /* Cor dos links em um tom de cinza claro */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ffffff;  /* Cor do link ao passar o mouse */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);  /* Sombra suave ao redor das imagens */
+}
+
+footer {
+    background-color: #1f1f1f;  /* Cor de fundo do rodapé */
+    color: white;  /* Cor do texto no rodapé */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: #ffffff;  /* Cor do título */
+}
+
+p {
+    margin-bottom: 20px;
+    color: #cccccc;  /* Cor do texto de parágrafo em um tom de cinza claro */
+}
+
+button {
+    background-color: #333333;  /* Cor de fundo do botão */
+    color: white;  /* Cor do texto do botão */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555555;  /* Mudança de cor ao passar o mouse sobre o botão */
+}
+
+.toggle-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.toggle-label:hover {
+    background-color: #444444;  /* Cor do botão ao passar o mouse */
+}

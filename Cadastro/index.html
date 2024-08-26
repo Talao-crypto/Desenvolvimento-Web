@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Aluno PUC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="brasao.jpeg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="brasao.jpeg" alt="Brasão da PUC" class="brasao">
+            <h1>Cadastro do Aluno PUC</h1>
+        </div>
+    </header>
+    
+    <main>
+        <div class="form-container">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="matricula">Número de Matrícula</label>
+                    <input type="text" id="matricula" name="matricula" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="curso">Curso</label>
+                    <input type="text" id="curso" name="curso" required>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 PUC. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector(".form-container").classList.add("visible");
+        });
+    </script>
+</body>
+</html>

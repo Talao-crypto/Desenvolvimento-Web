@@ -1,0 +1,26 @@
+@charset "UTF-8";
+body
+{
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-container {
+    display: flex; /* Define o contêiner como um flexbox */
+    justify-content: space-around; /* Distribui as caixas uniformemente com espaço ao redor */
+    align-items: center; /* Centraliza as caixas verticalmente */
+    height: 100vh; /* Altura do contêiner é 100% da altura da viewport */
+    padding: 20px;
+    background-color: #f0f0f0; /* Cor de fundo do contêiner */
+}
+
+.box {
+    background-color: pink; /* Cor de fundo das caixas */
+    padding: 20px;
+    color: white; /* Cor do texto */
+    font-size: 18px;
+    border-radius: 8px;
+    flex: 1; /* Faz com que todas as caixas cresçam igualmente */
+    text-align: center; /* Centraliza o texto dentro das caixas */
+    margin: 0 10px; /* Espaçamento horizontal entre as caixas */
+}

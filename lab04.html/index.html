@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link do CSS padrão (claro) -->
+    <link id="theme-link" rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Natureza</h1>
+        <!-- Botão para alternar o tema -->
+        <button id="toggle-theme">Modo Escuro</button>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li><a href="tech.html">Tecnologia</a></li>
+                <li><a href="space.html">Espaço</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Beleza Natural</h1>
+        <img src="assets/nature/nature1.avif" alt="">
+        <img src="assets/nature/nature2.avif" alt="">
+        <img src="assets/nature/nature3.avif" alt="">
+    </main>
+   
+    <footer>
+        <p>2024 Tema Natureza. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script JavaScript para alternar entre temas -->
+    <script>
+        const toggleButton = document.getElementById('toggle-theme');
+        const themeLink = document.getElementById('theme-link');
+
+        toggleButton.addEventListener('click', function() {
+            // Verifica o tema atual
+            if (themeLink.getAttribute('href') === 'styles.css') {
+                themeLink.setAttribute('href', 'stylesdark.css');
+                toggleButton.textContent = 'Modo Claro';
+            } else {
+                themeLink.setAttribute('href', 'styles.css');
+                toggleButton.textContent = 'Modo Escuro';
+            }
+        });
+    </script>
+</body>
+</html>

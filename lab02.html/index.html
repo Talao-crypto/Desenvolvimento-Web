@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2</title>
+    <link rel="shortcut icon" href="Github-Octicons-Terminal-16.512.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <h1>Lab 2</h1>
+    <h2>Titulo de segunda ordem</h2>
+        <p></p>
+    <h3>Titulo de terceira ordem</h3>
+        <p></p>
+    <h4>Titulo de quarta ordem</h4>
+        <p></p>
+    <h5>Titulo de quinta ordem</h5>
+        <p></p>
+    <h6>Titulo de sexta ordem</h6>
+        <p></p>
+    <p>Acima vemos modelos de titulos em que cada um possui sua importancia e utilidade</p>
+    <h2>Aqui veremos modelos de listas ↓ </h2>
+    <ul>
+        <li>Fazer compras</li>
+        <li>Estudar</li>
+        <li>Treinar</li>
+    </ul>
+
+    <ol type="A">
+        <li>Tomar café</li>
+        <li>Estudar</li>
+        <li>Dormir</li>
+    </ol>
+    <p>Tambem e possivel misturar as listas</p>
+    <ul>
+        <li>segunda</li>
+        <ol type="I">
+            <li>Acordar</li>
+            <li>Fazer compras</li>
+        </ol>
+        <br><br>
+        <li>Terça</li>
+        <ol type="I">
+            <li>Estudar</li>
+            <li>Treinar</li>
+        </ol>
+    </ul>
+    <br><br>
+    <form action="/submit" method="post">
+    <label for="Nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    <br><br>
+    <label for="Fruta">Fruta Favorita:</label>
+    <select name="fruta" id="fruta">
+    <option value="maca">Maçã</option>
+    <option value="banana">Banana</option>
+    <option value="laranja">Laranja</option>
+    </select>
+    <br><br>
+    <label for="comentarios">Comentarios adicionais:</label>
+    <br>
+    <textarea name="comentarios" id="comentarios" rows="4" cols="50"></textarea>
+    <br><br>
+    <input type="submit" value="Enviar">
+    </form>
+    <br><br>
+    <h2>Grfico em canvas</h2>
+
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+    <script>
+        
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+
+        
+        ctx.fillStyle = "#FF5733"; // Cor laranja
+
+        
+        ctx.fillRect(20, 20, 150, 75);
+    </script>
+
+    <h2>Grafico em SVG</h2>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="#33FF57" />
+    </svg>
+
+    <h2>Demonstração de audio</h2>
+    <audio src="#" controls></audio>
+    <p><small><em>não tem nenhum arquivo de audio é apenas uma Demonstração</em></small></p>
+
+    <h2>Maneiras de colocar um video no site</h2>
+    <p>Voce pode colocar por meio de links, exemplo clique <a href="https://www.youtube.com/watch?v=uuZ1U6xBswQ" target="_blank">aqui</a></p>
+    <p>Ou incorporando direto do YouTube como se ve abaixo</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uuZ1U6xBswQ?si=aEjJUhcsX5cvFZWn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+
+</html>

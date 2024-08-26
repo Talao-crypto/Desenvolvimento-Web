@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+header
+{
+    background-image: linear-gradient(to bottom, pink,white);
+    padding: 10px;
+    text-align: center;
+}
+
+nav
+{
+    text-align: justify;
+    text-decoration: none;
+
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 10px;
+    padding: 10px;
+   
+}
+
+nav ul li a
+{
+    color: rgb(242, 67, 96);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #eee6e6;
+    text-align: center;
+}
+nav ul li a:hover {
+    background-color: pink;
+}
+
+main
+{
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    min-height: 200px;
+    min-width: 200px;
+}
+
+/* Efeito de ampliação com transição suave ao passar o mouse */
+section:hover {
+    transform: scale(1.1); /* Amplia o elemento em 10% */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para dar destaque */
+}
+
+
+section h2
+{
+    margin-top: 0;
+    color: #333;
+}
+
+footer
+{
+    background-color: #c9c7c7;
+    color: white;
+    text-align: center;
+    padding-top: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+section:hover {
+    transform: scale(1.03); /* Amplia o elemento em 10% */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para dar destaque */
+}
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
