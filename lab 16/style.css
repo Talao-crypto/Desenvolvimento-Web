@@ -1,0 +1,73 @@
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculadora {
+    width: 320px;
+    background-color: #333; /* Fundo da calculadora em cinza escuro */
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.tela {
+    width: 100%;
+    height: 60px;
+    background-color: #222; /* Fundo da tela em cinza mais escuro */
+    padding: 10px;
+    border-bottom: 1px solid #000;
+    font-size: 36px;
+    text-align: right;
+    color: #fff; /* Texto da tela em branco */
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.botao-numero, .botao-operacao, .botao-igual, .botao-limpar {
+    width: 100%;
+    height: 60px;
+    background-color: #505050; /* Cor dos botões numéricos em cinza escuro */
+    border: none;
+    border-radius: 15px;
+    font-size: 24px;
+    color: #fff; /* Texto dos botões em branco */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.2s;
+}
+
+.botao-numero:hover, .botao-operacao:hover, .botao-igual:hover, .botao-limpar:hover {
+    background-color: #666; /* Cor dos botões ao passar o mouse */
+    transform: scale(1.1);
+}
+
+.botao-operacao, .botao-igual {
+    background-color: #ff9500; /* Cor dos botões de operação e do botão "=" em laranja */
+    color: #fff;
+}
+
+.botao-limpar {
+    background-color: #d4d4d2; /* Cor do botão "C" em cinza claro */
+    color: #000;
+}
+
+.botao-limpar:hover {
+    background-color: #e0e0e0;
+}
+
+.botao-numero:focus, .botao-operacao:focus, .botao-igual:focus, .botao-limpar:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
